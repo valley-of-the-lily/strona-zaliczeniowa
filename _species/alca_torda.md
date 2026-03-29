@@ -1,4 +1,7 @@
 --- 
+
+toc: false
+
 name: razorbill
 individuals:
 - short_name: bAlcTor1
