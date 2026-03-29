@@ -44,6 +44,10 @@ title: Strona główna
                     </div>
                 </td>
 
+                <td>
+                    <h2><a href="{{ species.url }}">{{ species.common_name }} (<i>{{ species.name }}</i>)</a></h2>
+                </td>
+
                 <!-- Nazwy -->
                 <td>
                     {{ species.common_name }}<br>
@@ -66,5 +70,3 @@ title: Strona główna
         {% endfor %}
     </tbody>
 </table>
-
-    <!-- <h2><a href="{{ species.url }}">{{ species.common_name }} (<i>{{ species.name }}</i>)</a></h2> -->
