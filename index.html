@@ -36,8 +36,8 @@ title: Strona główna
                         <span class="bionano-badge">Bionano</span>
                     {% endif %}
 
-                    <a href="{{ species.url }}">
-                        <img src="{{ species.image }}" alt="{{ species.common_name }}">
+                    <a href="{{ site.baseurl }}{{ species.url }}">
+                        <img src="{{ site.baseurl }}{{ species.image }}" alt="{{ species.common_name }}">
                     </a>
                     <div class="attribution">
                         {{ species.image_attribution }}
