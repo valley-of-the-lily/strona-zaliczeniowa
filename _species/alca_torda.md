@@ -20,7 +20,7 @@ project: [ vgp ]
 
 layout: species
 title: Alca torda
-image: /strona-zaliczeniowa/assets/img/alca_torda.jpg
+image: /assets/img/alca_torda.jpg
 image_attribution: Gsd97jks (Wikipedia)
 common_name: razorbill
 
