@@ -82,7 +82,7 @@ The razorbill (*Alca torda*) is a seabird belonging to the auk family (*Alcidae*
 
 ### Conservation Status and Threats
 
-* **IUCN Status:** Classified as **Least Concern** by the :contentReference[oaicite:1]{index=1}.
+* **IUCN Status:** Classified as **Least Concern**.
 
 * **Threats:**
   * **Oil spills:** Pollution in the ocean can damage feathers and reduce survival.
@@ -101,6 +101,6 @@ The razorbill (*Alca torda*) is a seabird belonging to the auk family (*Alcidae*
 ### Additional Notes
 
 * The razorbill is the **only living species in the genus *Alca***.
-* It is closely related to the extinct :contentReference[oaicite:2]{index=2}, which disappeared in the 19th century.
+* It is closely related to the extinct, which disappeared in the 19th century.
 * Razorbills are excellent swimmers and can remain underwater for extended periods while hunting.
 * Large breeding colonies can contain **thousands of individuals**, making them an important part of North Atlantic marine ecosystems.
