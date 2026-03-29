@@ -1,0 +1,81 @@
+---
+layout: default
+---
+
+<div class="layout">
+    <!-- spis treści -->
+    {% if page.toc %}
+    <nav class="toc">
+        {{ page.toc }}
+    </nav>
+
+    <main class="species-page">
+        
+        <header class="species-header">
+            <div class="header-text">        
+                <h1>{{ page.common_name }}</h1>
+                <p class="latin-name"><i>{{ page.name }}</i></p>
+            </div>
+
+            <aside class="species-image-wrapper">
+                <img src="{{ page.image }}" alt="{{ page.common_name }}">
+                <p class="attribution">{{ page.image_attribution }}</p>
+            </aside>
+        </header>
+
+        <section id="taxonomy">
+            <h2>Taxonomy</h2>
+            <p>
+                Rodzina: {{ page.family.name}}
+                Rząd: {{ page.order.name }}
+            </p>
+        </section>
+
+        <section id="resources">
+            <h2>Sequences</h2>
+                <table class="resources-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Dane</th>
+                            <th scope="col">Link do zasobu</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for sample in page.samples %}
+                        <tr>
+                            <td>{{ sample.datatype }}</td>
+                            <td>
+                                <a href="{{ sample.url }}" target="_blank" title="Otwórz zasób">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+        </section>
+
+        <section id="info">
+            <h2>Information</h2>
+            <div class="description">
+                {{ content | markdownify }}
+            </div>
+        </section>
+
+    </main>
+
+</div>
+
+
+<aside class="social-icons">
+    <a href="https://www.facebook.com" target="_blank" title="Facebook">
+        <i class="fab fa-facebook"></i>
+    </a>
+    <a href="https://www.instagram.com" target="_blank" title="Instagram">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.reddit.com" target="_blank" title="Reddit">
+        
+        <i class="fab fa-reddit-alien"></i>
+    </a>
+</aside>

@@ -1,0 +1,70 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: default
+title: Strona główna
+---
+
+<!-- <link rel="stylesheet" href="/assets/css/style.css"> -->
+
+<h1>Lista gatunków</h1>
+
+<table class="species-table">
+    <thead>
+        <tr>
+            <th>Osobnik</th>
+            <th>Nazwa</th>
+            <th>Klasyfikacja</th>
+            <th>Liczba sekwencji</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {% for species in site.species %}
+
+            {% assign has_bionano = false %}
+            {% for tech in species.samples %}
+                {% if tech.datatype == "Bionano" %}
+                    {% assign has_bionano = true %}
+                {% endif %}
+            {% endfor %}
+            
+            <tr class="{% if has_bionano %}bionano-row{% endif %}">
+                <td class="image-cell">
+                    {% if has_bionano %}
+                        <span class="bionano-badge">Bionano</span>
+                    {% endif %}
+
+                    <a href="{{ species.url }}">
+                        <img src="{{ species.image }}" alt="{{ species.common_name }}">
+                    </a>
+                    <div class="attribution">
+                        {{ species.image_attribution }}
+                    </div>
+                </td>
+
+                <!-- Nazwy -->
+                <td>
+                    {{ species.common_name }}<br>
+                    <i>{{ species.name }}</i>
+                </td>
+
+                <!-- Klasyfikacja -->
+                <td>
+                    Rodzina: {{ species.family.name }}<br>
+                    Rząd: {{ species.order.name }}
+                </td>
+
+                <!-- Zasoby -->
+                <td>
+                    {{ species.samples | size }}
+                </td>
+
+            </tr>
+
+        {% endfor %}
+    </tbody>
+</table>
+
+    <!-- <h2><a href="{{ species.url }}">{{ species.common_name }} (<i>{{ species.name }}</i>)</a></h2> -->
