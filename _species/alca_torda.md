@@ -19,6 +19,7 @@ taxon_id: 28689
 project: [ vgp ]
 
 layout: species
+title: Alca torda
 image: /strona-zaliczeniowa/assets/img/alca_torda.jpg
 image_attribution: Gsd97jks (Wikipedia)
 common_name: razorbill
