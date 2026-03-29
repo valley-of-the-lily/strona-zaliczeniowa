@@ -13,7 +13,7 @@ individuals:
     sex: female
 project: [ vgp ]
 layout: species
-image: /assets/img/accipiter_gentilis.jpg
+image: /strona-zaliczeniowa/assets/img/accipiter_gentilis.jpg
 image_attribution: CC BY-SA 2.0, Steve Garvie (wikimedia)
 samples:
   - datatype: PacBio HiFi 
