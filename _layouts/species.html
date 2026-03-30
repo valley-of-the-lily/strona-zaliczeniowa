@@ -6,7 +6,11 @@ layout: default
     <!-- spis treści -->
     {% if page.toc %}
     <nav class="toc">
-        {{ page.toc }}
+        <ul>
+            {% for item in page.toc %}
+                <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+            {% endfor %}
+        </ul>
     </nav>
     {% endif %}
 
