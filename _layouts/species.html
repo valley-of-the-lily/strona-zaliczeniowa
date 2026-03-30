@@ -1,25 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }}</title>
+---
+layout: default
+---
 
-        <!-- styl globalny -->
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
-
-        <!-- styl strony gatunku -->
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-
-        <!-- ikony -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-</head>
-
-
-<body>
-
-<main>
 <div class="layout">
     <!-- spis treści -->
     {% if page.toc %}
@@ -99,11 +81,9 @@
     </a>
 </aside>
 
-</main>
+
 
 <footer class="footer">
     <p>Autor: Paulina Niemczak</p>
 </footer>
 
-</body>
-</html>
