@@ -6,8 +6,6 @@
     <title>{{ page.title }}</title>
 
         <!-- styl globalny -->
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-
         <!-- styl strony gatunku -->
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 
@@ -18,15 +16,17 @@
 
 
 <body>
+
+<main>
 <div class="layout">
     <!-- spis treści -->
-    <!-- {% if page.toc %}
+    {% if page.toc %}
     <nav class="toc">
         {{ page.toc }}
     </nav>
-    {% endif %} -->
+    {% endif %}
 
-    <main class="species-page">
+    <div class="species-page">
         
         <header class="species-header">
             <div class="header-text">        
@@ -43,7 +43,7 @@
         <section id="taxonomy">
             <h2>Taxonomy</h2>
             <p>
-                Rodzina: {{ page.family.name}}
+                Rodzina: {{ page.family.name}}<br>
                 Rząd: {{ page.order.name }}
             </p>
         </section>
@@ -75,11 +75,11 @@
         <section id="info">
             <h2>Information</h2>
             <div class="description">
-                {{ content | markdownify }}
+                {{ content}}
             </div>
         </section>
 
-    </main>
+    </div>
 
 </div>
 
@@ -96,6 +96,12 @@
         <i class="fab fa-reddit-alien"></i>
     </a>
 </aside>
+
+</main>
+
+<footer class="footer">
+    <p>Autor: Paulina Niemczak</p>
+</footer>
 
 </body>
 </html>
