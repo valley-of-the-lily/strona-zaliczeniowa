@@ -1,4 +1,42 @@
 ---
+toc:
+- title: Taxonomy
+  url: "#taxonomy"
+
+- title: Sequences
+  url: "#resources"
+
+- title: Information
+  url: "#info"
+
+- title: Description
+  url: "#description"
+
+- title: Habitat and distribution
+  url: "#habitat-and-distribution"
+
+- title: Diet
+  url: "#diet"
+
+- title: Hunting techniques
+  url: "#hunting-techniques"
+
+- title: Breeding and nesting
+  url: "#breeding-and-nesting"
+
+- title: Conservation status
+  url: "#conservation-status"
+
+- title: Interesting facts
+  url: "#interesting-facts"
+
+- title: Observing
+  url: "#observing-goshawks"
+
+- title: Conclusion
+  url: "#conclusion"
+
+
 short_name: bAccGen
 name: Accipiter gentilis
 taxon_id: 8957
