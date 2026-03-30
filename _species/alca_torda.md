@@ -1,6 +1,26 @@
 --- 
 
-toc: false
+toc:
+- title: Taxonomy
+  url: "#taxonomy"
+
+- title: Sequences
+  url: "#resources"
+
+- title: Information
+  url: "#info"
+
+- title: Key characteristics
+  url: "#key-characteristics-of-alca-torda"
+
+- title: Conservation status and threats
+  url: "#conservation-status-and-threats"
+
+- title: Reproduction
+  url: "#reproduction"
+
+- title: Additional notes
+  url: "#additional-notes"
 
 name: razorbill
 individuals:
