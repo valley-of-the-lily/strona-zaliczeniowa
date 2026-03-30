@@ -1,4 +1,30 @@
 ---
+toc: 
+- title: Taxonomy
+  url: "#taxonomy"
+
+- title: Sequences
+  url: "#resources"
+
+- title: Information
+  url: "#info"
+
+- title: Key characteristics
+  url: "#key-characteristics"
+
+- title: Unique adaptations
+  url: "#unique-adaptations"
+
+- title: Conservation status and threats
+  url: "#conservation-status-and-threats"
+
+- title: Interesting facts
+  url: "#interesting-facts"
+
+- title: Conservation efforts
+  url: "#conservation-efforts"
+
+
 short_name: mOrnAna
 name: Ornithorhynchus anatinus
 taxon_id: 9258
