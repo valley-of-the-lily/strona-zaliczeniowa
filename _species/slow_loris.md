@@ -1,4 +1,27 @@
 ---
+toc:
+- title: Taxonomy
+  url: "#taxonomy"
+
+- title: Sequences
+  url: "#resources"
+
+- title: Information
+  url: "#info"
+
+- title: Key characteristics
+  url: "#key-characteristics-of-nycticebus-coucang"
+
+- title: Conservation status and threats
+  url: "#conservation-status-and-threats"
+
+- title: Conservation efforts
+  url: "#conservation-efforts"
+
+- title: Additional notes
+  url: "#additional-notes"
+
+
 name: Nycticebus coucang
 individuals:
 - short_name: mNycCou1
